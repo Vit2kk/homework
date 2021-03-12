@@ -1,0 +1,84 @@
+фев 17, 2021 8:05:07 PM hudson.remoting.jnlp.Main createEngine
+INFO: Setting up agent: DESKTOP-1SOV26G
+фев 17, 2021 8:05:07 PM hudson.remoting.jnlp.Main$CuiListener <init>
+INFO: Jenkins agent is running in headless mode.
+фев 17, 2021 8:05:07 PM hudson.remoting.Engine startEngine
+INFO: Using Remoting version: 4.6
+фев 17, 2021 8:05:07 PM org.jenkinsci.remoting.engine.WorkDirManager initializeWorkDir
+INFO: Using c:\Users\user\homework\jenkinshome\workspace as a remoting work directory
+фев 17, 2021 8:05:08 PM hudson.remoting.jnlp.Main$CuiListener status
+INFO: Locating server among [http://localhost:8081/]
+фев 17, 2021 8:05:08 PM org.jenkinsci.remoting.engine.JnlpAgentEndpointResolver resolve
+INFO: Remoting server accepts the following protocols: [JNLP4-connect, Ping]
+фев 17, 2021 8:05:08 PM hudson.remoting.jnlp.Main$CuiListener status
+INFO: Agent discovery successful
+  Agent address: localhost
+  Agent port:    55299
+  Identity:      d4:a9:26:9b:0f:31:ae:aa:b6:41:b2:f3:28:ae:c0:52
+фев 17, 2021 8:05:08 PM hudson.remoting.jnlp.Main$CuiListener status
+INFO: Handshaking
+фев 17, 2021 8:05:08 PM hudson.remoting.jnlp.Main$CuiListener status
+INFO: Connecting to localhost:55299
+фев 17, 2021 8:05:08 PM hudson.remoting.jnlp.Main$CuiListener status
+INFO: Trying protocol: JNLP4-connect
+фев 17, 2021 8:05:08 PM hudson.remoting.jnlp.Main$CuiListener status
+INFO: Remote identity confirmed: d4:a9:26:9b:0f:31:ae:aa:b6:41:b2:f3:28:ae:c0:52
+фев 17, 2021 8:05:10 PM hudson.remoting.jnlp.Main$CuiListener status
+INFO: Connected
+фев 17, 2021 8:08:10 PM hudson.remoting.jnlp.Main$CuiListener status
+INFO: Terminated
+фев 17, 2021 8:08:23 PM org.jenkinsci.remoting.engine.JnlpAgentEndpointResolver waitForReady
+INFO: Master isn't ready to talk to us on http://localhost:8081/tcpSlaveAgentListener/. Will try again: response code=503
+фев 17, 2021 8:08:33 PM org.jenkinsci.remoting.engine.JnlpAgentEndpointResolver waitForReady
+INFO: Master isn't ready to talk to us on http://localhost:8081/tcpSlaveAgentListener/. Will try again: response code=503
+фев 17, 2021 8:08:43 PM org.jenkinsci.remoting.engine.JnlpAgentEndpointResolver waitForReady
+INFO: Master isn't ready to talk to us on http://localhost:8081/tcpSlaveAgentListener/. Will try again: response code=503
+фев 17, 2021 8:08:54 PM hudson.remoting.jnlp.Main$CuiListener status
+INFO: Performing onReconnect operation.
+фев 17, 2021 8:08:54 PM hudson.remoting.jnlp.Main$CuiListener status
+INFO: onReconnect operation completed.
+фев 17, 2021 8:08:54 PM hudson.remoting.jnlp.Main$CuiListener status
+INFO: Locating server among [http://localhost:8081/]
+фев 17, 2021 8:08:54 PM org.jenkinsci.remoting.engine.JnlpAgentEndpointResolver resolve
+INFO: Remoting server accepts the following protocols: [JNLP4-connect, Ping]
+фев 17, 2021 8:08:54 PM hudson.remoting.jnlp.Main$CuiListener status
+INFO: Agent discovery successful
+  Agent address: localhost
+  Agent port:    58481
+  Identity:      d4:a9:26:9b:0f:31:ae:aa:b6:41:b2:f3:28:ae:c0:52
+фев 17, 2021 8:08:54 PM hudson.remoting.jnlp.Main$CuiListener status
+INFO: Handshaking
+фев 17, 2021 8:08:54 PM hudson.remoting.jnlp.Main$CuiListener status
+INFO: Connecting to localhost:58481
+фев 17, 2021 8:08:54 PM hudson.remoting.jnlp.Main$CuiListener status
+INFO: Trying protocol: JNLP4-connect
+фев 17, 2021 8:08:54 PM hudson.remoting.jnlp.Main$CuiListener status
+INFO: Remote identity confirmed: d4:a9:26:9b:0f:31:ae:aa:b6:41:b2:f3:28:ae:c0:52
+фев 17, 2021 8:08:54 PM hudson.remoting.jnlp.Main$CuiListener status
+INFO: Connected
+фев 17, 2021 8:09:55 PM org.jvnet.winp.Native loadByUrl
+WARNING: Failed to load DLL from static location
+java.lang.UnsatisfiedLinkError: Native Library C:\Users\user\homework\jenkinshome\workspace\jarCache\44\winp.x64.BFFE30B3B50581290B1866EF8D48C609.dll already loaded in another classloader
+	at java.lang.ClassLoader.loadLibrary0(Unknown Source)
+	at java.lang.ClassLoader.loadLibrary(Unknown Source)
+	at java.lang.Runtime.load0(Unknown Source)
+	at java.lang.System.load(Unknown Source)
+	at org.jvnet.winp.Native.loadDll(Native.java:242)
+	at org.jvnet.winp.Native.loadByUrl(Native.java:162)
+	at org.jvnet.winp.Native.load(Native.java:124)
+	at org.jvnet.winp.Native.<clinit>(Native.java:93)
+	at org.jvnet.winp.WinProcess.enableDebugPrivilege(WinProcess.java:245)
+	at hudson.util.ProcessTree$Windows.<clinit>(ProcessTree.java:700)
+	at hudson.util.ProcessTree.get(ProcessTree.java:446)
+	at hudson.Launcher$RemoteLauncher$KillTask.call(Launcher.java:1164)
+	at hudson.Launcher$RemoteLauncher$KillTask.call(Launcher.java:1155)
+	at hudson.remoting.UserRequest.perform(UserRequest.java:211)
+	at hudson.remoting.UserRequest.perform(UserRequest.java:54)
+	at hudson.remoting.Request$2.run(Request.java:376)
+	at hudson.remoting.InterceptingExecutorService.lambda$wrap$0(InterceptingExecutorService.java:78)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at hudson.remoting.Engine$1.lambda$newThread$0(Engine.java:119)
+	at java.lang.Thread.run(Unknown Source)
+
